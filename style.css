@@ -305,7 +305,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding: 30px 100px 0px 100px;
+    padding: 30px 100px 80px 100px;
     background-color: rgba(9, 11, 32, 0.96);
 }
 
@@ -315,17 +315,45 @@ a {
     background-color: #120F2C;
     border-radius: 10px;
 }
-.pruchase-box-transparent{
+
+.pruchase-box-transparent {
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.pruchase-box-transparent h6{}
-.pruchase-box-transparent h3{}
-.pruchase-box-transparent p{}
+.pruchase-box-transparent h6 {
+    color: #C331E4;
+    text-align: left;
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98.6%;
+    /* 23.664px */
+}
 
+.pruchase-box-transparent h3 {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 109.1%;
+    padding: 15px 0px;
+    /* 43.64px */
+}
 
-
+.pruchase-box-transparent p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155.1%;
+}
 
 .pruchase-box:hover {
     background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
@@ -423,3 +451,172 @@ a {
 }
 
 /* Purchase END */
+
+/* Footer Start */
+.Footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    padding: 40px 100px;
+}
+
+.footer-box-1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-box-1 p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer-box {}
+
+.footer-box h5 {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+    padding-bottom: 20px;
+}
+
+.footer-box ul li a {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 186.1%;
+}
+
+/* Footer END */
+
+/* Card Slider Start */
+.container {
+    background-image: url('./assets/imgs/image.png') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+    height: 100%;
+}
+
+.container-shadow {
+    width: 100%;
+    background: rgba(9, 11, 32, 0.87);
+    padding: 30px 0px 80px 0px;
+}
+
+.card__content h2 {
+    color: #C331E4;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98.6%;
+}
+
+.card__content h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98.6%;
+    padding: 20px 0px 30px 0px;
+}
+
+.swiper-wrapper {}
+
+.card__articles {
+    padding: 20px;
+    border-radius: 5px !important;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    background: linear-gradient(87deg, rgba(69, 32, 166, 0.11) -8.55%, rgba(69, 32, 166, 0.00) 94.91%);
+    backdrop-filter: blur(9px);
+}
+
+.card__content {
+    border-radius: 0px;
+    margin: 0px !important;
+}
+
+
+.test-img-box {
+    display: flex;
+    align-items: center;
+}
+
+.test-img-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.test-img-box span {
+    padding-left: 20px;
+}
+
+.test-img-box span h5 {
+    color: #AF06FF;
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+}
+
+.test-img-box span p {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.6%;
+    padding-top: 10px;
+}
+
+.card__articles p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155.1%;
+    padding-top: 20px;
+}
+
+.test-star-box {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.test-star-box span {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.test-star-span svg {
+    margin-right: 4px;
+}
+
+.swiper-pagination {}
+
+.swiper-pagination-bullet {
+    background-color: #C331E42E;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #C331E4;
+}
+
+/* Card Slider END */
