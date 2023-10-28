@@ -92,12 +92,19 @@ a {
 
 .signup-a {
     color: #FFF;
+    border: 1px solid #3418A3;
     text-align: center;
     font-size: 16px;
     padding: 14px 30px;
     border-radius: 5px;
     background: linear-gradient(90deg, #3418A3 2.53%, #C331E4 148.02%);
     box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
+    transition: 0.5s ease-in-out;
+}
+
+.signup-a:hover {
+    background: transparent;
+    border: 1px solid #CD70E2;
 }
 
 .hero-section-text-container {
@@ -152,7 +159,40 @@ a {
 
 .getStart-btn {
     border-radius: 5px;
-    border: none;
+    border: 1px solid #3418A3;
+    background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
+    box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
+    margin-right: 10px;
+    padding: 15px 30px;
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;    transition: 0.5s ease-in-out;
+}
+
+.getStart-btn:hover {
+    background: transparent;
+    border: 1px solid #CD70E2;
+}
+
+.viewPaln-btn {
+    border-radius: 5px;
+    border: 1px solid #CD70E2;
+    /* box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22); */
+    background-color: transparent;
+    padding: 15px 30px;
+    color: #CD70E2;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.viewPaln-btn:hover {
+    border-radius: 5px;
     background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
     box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
     margin-right: 10px;
@@ -163,20 +203,8 @@ a {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-}
-
-.viewPaln-btn {
-    border-radius: 5px;
-    border: 1px solid #CD70E2;
-    box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
-    background-color: transparent;
-    padding: 15px 30px;
-    color: #CD70E2;
-    text-align: center;
-    font-family: Manrope;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
+    border: 1px solid #3418A3;
+    transition: 0.5s ease-in-out;
 }
 
 /* WHY CHOOSE US START */
