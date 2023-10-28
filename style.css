@@ -433,6 +433,8 @@ a {
 }
 
 .pruchase-box ul li {
+    display: flex;
+    align-items: center;
     color: #FFF;
     font-family: Manrope;
     font-size: 12px;
@@ -444,6 +446,8 @@ a {
 
 .pruchase-box ul li .tic {
     margin-right: 5px;
+    width: 12px;
+    height: 12px;
 }
 
 .pruchase-box ul li .cross-i {
