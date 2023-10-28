@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #ACFFF6;
+    --secondary: #33373C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #090b20f5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.input:focus {
+    outline: none !important;
+    color: #FFFFFF;
+}
+
+.header-container {
+    background-image: url('./assets/imgs/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    margin: auto;
+    height: 15vh;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 50px 20px 0px 110px;
+    height: 85vh;
+
+}
+
+.logo-conatiner {}
+
+.menu-conatiner {}
+
+.menu-conatiner ul {
+    display: flex;
+}
+
+.menu-conatiner ul li a {
+    margin-left: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+.login-a {
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.signup-a {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 30px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #3418A3 2.53%, #C331E4 148.02%);
+    box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
+}
+
+.hero-section-text-container {
+    width: 50%;
+}
+
+.hero-section-text-container h1 {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.hero-section-text-container span {
+    color: #C331E4;
+    font-family: Titillium Web;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.hero-section-text-container p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.hero-section-text-container p span {
+    color: #CD70E2;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-section-img-container {
+    /* background-image: url('./assets/imgs/4.png'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    width: 50%;
+    /* height: 100%; */
+}
+
+.hero-section-img-container img {}
+
+.hero-btns-conatiner {
+    display: flex;
+}
+
+.getStart-btn {
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
+    box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
+    margin-right: 10px;
+    padding: 15px 30px;
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.viewPaln-btn {
+    border-radius: 5px;
+    border: 1px solid #CD70E2;
+    box-shadow: -2px 1px 23px 0px rgba(205, 112, 226, 0.22);
+    background-color: transparent;
+    padding: 15px 30px;
+    color: #CD70E2;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* WHY CHOOSE US START */
+.whyChooseUs-container {
+    background-image: url('./assets/imgs/13.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.choose-ShadowImg-container {
+    padding: 80px 0px;
+    background: #090b20f5;
+}
+
+.whyChooseUs-container h2 {
+    color: #C331E4;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.whyChooseUs-container h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.whyChooseUs-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 8px;
+    word-spacing: 2px;
+    font-weight: 500;
+    line-height: 149.187%;
+}
+
+.chooseGrids-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 30px 100px 0px 100px;
+}
+
+.chooseGrid-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #120F2C;
+    padding: 40px 20px 50px 20px;
+    transition: 0.5s ease;
+}
+
+.chooseGrid-box:hover {
+    border-radius: 5px;
+    background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
+    transition: 0.5s ease-in-out;
+}
+
+.chooseGrid-box:hover .Learn-btn {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.chooseGrid-box .a {}
+
+.grid-icon-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70px;
+    padding: 12px 12px;
+    border-radius: 10px;
+    background: #AF06FF;
+}
+
+.grid-icon-span img {}
+
+.chooseGrid-box h5 {
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.chooseGrid-box p {
+    color: rgba(255, 255, 255, 0.69);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14px;
+    padding: 0px 10px 40px 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.Learn-btn {
+    border-radius: 5px;
+    border: 1px solid #CD70E2;
+    background-color: transparent;
+    padding: 12px 25px;
+    color: #CD70E2;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+/* WHY CHOOSE US END */
+
+/* Purchase END */
+.pruchase-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 30px 100px 0px 100px;
+    background-color: rgba(9, 11, 32, 0.96);
+}
+
+
+.pruchase-box {
+    padding: 20px;
+    background-color: #120F2C;
+    border-radius: 10px;
+}
+.pruchase-box-transparent{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pruchase-box-transparent h6{}
+.pruchase-box-transparent h3{}
+.pruchase-box-transparent p{}
+
+
+
+
+.pruchase-box:hover {
+    background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
+}
+
+.pruchase-box:hover .try-btn {
+    background: #120F2C !important;
+}
+
+.pruchase-box img {}
+
+.pruchase-box h5 {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.6%;
+    padding: 10px 0px 15px 0px;
+}
+
+.pruchase-box h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+    padding-bottom: 20px;
+}
+
+.dollar-clr {
+    color: rgba(255, 255, 255, 0.48);
+    font-family: Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+}
+
+.perMonth {
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.6%;
+}
+
+.try-btn {
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(90deg, #3418A3 2.53%, #CD70E2 148.02%);
+    margin-right: 10px;
+    padding: 15px 15px;
+    width: 100%;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.pruchase-box h4 {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+    margin-bottom: 8px;
+    padding: 20px 0px 10px 0px;
+}
+
+.pruchase-box ul li {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.1%;
+    margin-bottom: 12px;
+}
+
+.pruchase-box ul li .tic {
+    margin-right: 5px;
+}
+
+.pruchase-box ul li .cross-i {
+    margin-right: 8px;
+}
+
+/* Purchase END */
