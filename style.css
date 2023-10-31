@@ -66,7 +66,6 @@ a {
     margin: auto;
     padding: 50px 20px 0px 110px;
     height: 85vh;
-
 }
 
 .logo-conatiner {}
@@ -169,7 +168,8 @@ a {
     font-family: Manrope;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .getStart-btn:hover {
@@ -652,3 +652,209 @@ a {
 }
 
 /* Card Slider END */
+.sidebar-toggle-btn .line {
+    width: 30px;
+    height: 3px;
+    background-color: #FFF;
+    display: block;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-toggle-btn:hover {
+    cursor: pointer;
+}
+
+
+.menu-logo-box {
+    display: none;
+}
+
+.header__action {
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .header__action {
+        display: block;
+    }
+
+    .menu-conatiner {
+        /* display: none; */
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 0px;
+        overflow: hidden;
+        transition: width 0.2s ease-in-out;
+        background-color: #120e36;
+    }
+
+    .menu-container.hidden {
+        display: none;
+    }
+
+
+    .menu-conatiner img {
+        margin-left: 15px;
+    }
+
+    .menu-logo-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-logo-box svg {
+        margin-right: 20px;
+    }
+
+    .menu-conatiner ul {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .menu-conatiner ul li {
+        padding-bottom: 20px;
+
+    }
+
+    .menu-conatiner ul li a {
+        margin-left: 30px;
+        color: #FFFFFF;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #FFFFFF;
+        font-size: 16px;
+    }
+
+    .login-container {
+        display: none;
+    }
+
+    .hero-container {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .pruchase-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-shadow {
+        padding: 0px 20px;
+    }
+
+    .Footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .header-container {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .navbar-container {
+        padding: 0px 30px;
+        height: 15vh;
+    }
+
+    .hero-container {
+        padding-bottom: 30px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 50px 20px 0px 20px;
+        height: auto;
+
+    }
+
+    .hero-section-text-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section-img-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-section-img-container img {
+        width: 300px;
+    }
+
+    .chooseGrids-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 20px 0px 20px;
+    }
+
+    .pruchase-container {
+        padding: 30px 20px 80px 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 610px) {
+    .hero-section-text-container h1 {
+        line-height: 40px;
+        font-size: 35px;
+    }
+
+    .hero-section-text-container span {
+        font-size: 35px;
+        line-height: 10px;
+    }
+
+    .hero-section-text-container p {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+
+    .hero-section-text-container p span {
+        font-size: 14px;
+    }
+
+    .getStart-btn {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    .viewPaln-btn {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    .chooseGrids-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 20px 0px 20px;
+    }
+
+    .chooseGrid-box p {
+        font-size: 12px;
+        padding: 0px 0px 40px 0px;
+    }
+
+    .pruchase-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 20px 80px 20px;
+    }
+}

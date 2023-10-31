@@ -25,6 +25,17 @@
                 <img src="./assets/Logo.png" alt="">
             </div>
             <div class="menu-conatiner">
+                <div class="menu-logo-box">
+                    <img src="./assets/Logo.png" alt="">
+
+                    <svg class="cross-svg" width="30" height="30" viewBox="0 0 20 20" fill="none" onclick="closeMenu()">
+                        <path
+                            d="M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM7.87874 6.46443L10 8.5857L12.1213 6.46441C12.5118 6.07388 13.145 6.07388 13.5355 6.46441C13.926 6.85493 13.926 7.4881 13.5355 7.87862L11.4142 9.9999L13.5356 12.1213C13.9261 12.5118 13.9261 13.145 13.5356 13.5355C13.1451 13.926 12.5119 13.926 12.1214 13.5355L10 11.4141L7.87864 13.5355C7.48812 13.926 6.85496 13.926 6.46443 13.5355C6.07391 13.145 6.07391 12.5118 6.46443 12.1213L8.5858 9.9999L6.46452 7.87864C6.074 7.48812 6.074 6.85496 6.46452 6.46443C6.85505 6.07391 7.48821 6.07391 7.87874 6.46443Z"
+                            fill="white" />
+                    </svg>
+
+
+                </div>
                 <ul>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Use Cases</a></li>
@@ -37,6 +48,17 @@
                 <a href="#" class="login-a">Log in</a>
                 <a href="#" class="signup-a">Sign Up</a>
             </div>
+
+            <div class="header__action" onclick="toggleMenu()">
+                <div class="sidebar__menu">
+                    <div class="sidebar-toggle-btn" id="sidebar-toggle">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- navbar -->
         <!-- Heri Section -->
@@ -439,6 +461,7 @@
 
 
     <!--=============== SWIPER JS ===============-->
+    <script src="app.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
