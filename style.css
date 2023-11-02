@@ -70,7 +70,9 @@ a {
 
 .logo-conatiner {}
 
-.menu-conatiner {}
+.menu-conatiner {
+    z-index: 999;
+}
 
 .menu-conatiner ul {
     display: flex;
@@ -676,13 +678,235 @@ a {
     display: none;
 }
 
+/* Sign up Start */
+.sign-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/icons/Ellipse 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 15px;
+}
+
+.sign-inner-container {
+    width: 560px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(195, 49, 228, 0.28);
+    background: transparent;
+    backdrop-filter: blur(356px);
+    padding: 30px;
+}
+
+.main-user-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userIcon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(356px);
+}
+
+.userIcon-div svg {}
+
+.sign-inner-container h5 {
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.sign-inner-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+form {
+    padding: 30px 0px 0px 0px;
+}
+
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.input-div label {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.input-div input {
+    padding: 15px 10px 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(195, 49, 228, 0.28);
+    background: rgba(217, 217, 217, 0.03);
+    backdrop-filter: blur(356px);
+    color: #FFFFFF;
+}
+
+.input-div input:focus {
+    outline: 1px solid #C331E4;
+    background-color: rgba(217, 217, 217, 0.03);
+}
+
+.input-div input::placeholder {
+    color: rgba(255, 255, 255, 0.39);
+}
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.input-container svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: white;
+    fill-opacity: 0.24;
+}
+
+.register-btn-container {}
+
+.reg-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+    padding: 15px 0px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #3418A3 2.53%, #C331E4 148.02%);
+}
+
+.google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.6%;
+    padding: 15px 0px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.google-btn img {
+    margin-right: 5px;
+}
+
+.p-log {
+    color: rgba(255, 255, 255, 0.39) !important;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px !important;
+}
+
+.p-log a {
+    color: #AF06FF;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.rememberme-div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.rememberme-div a {
+    color: #AF06FF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.rememberme-div span {
+    display: flex;
+    color: rgba(255, 255, 255, 0.39);
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.rememberme-div input {
+    margin-right: 10px;
+}
+
+.rem-checkbox{
+    border-radius: 3px;
+    border: 1px solid rgba(195, 49, 228, 0.28);
+    background-color: rgba(217, 217, 217, 0.03) !important;
+    backdrop-filter: blur(356px);
+}
+
+/* Sign up End */
+
+
+
+
 @media only screen and (max-width: 1050px) {
     .header__action {
         display: block;
     }
 
     .menu-conatiner {
-        /* display: none; */
         position: fixed;
         left: 0;
         top: 0;
@@ -856,5 +1080,16 @@ a {
     .pruchase-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 30px 20px 80px 20px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .sign-main-container {
+        padding: 100px 5px;
+    }
+
+    .sign-inner-container {
+        width: 100%;
+        padding: 10px;
     }
 }
